@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: white;
+  color: #121212;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+/* CURRENCY */
+
+.currency {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 4px;
+  height: 100%;
+  margin: 20px auto;
+  max-width: 90%;
+  overflow: hidden;
+  padding: 0 0 50px 0;
+  position: relative;
+
+}
+
+
+.currency__title,
+.currency__exchange {
+   color: black;
+   margin: 0;
+   text-align: center;
+ }
+.currency__title {
+   background-color: antiquewhite;
+   padding: 10px 0 20px 0;
+ }
+.currency__exchange {
+   background-color: chartreuse;
+   padding: 10px 0;
+ }
+.currency__rate {
+   font-size: 130%;
+   margin: 0 5px;
+ }
+.currency__add-transation {
+   padding: 0 30px;
+ }
+.currency__remove-all {
+   clear: both;
+   color: brown;
+   display: block;
+   text-decoration: underline;
+ }
+.currency__footer {
+   width: 100%;
+   background-color: green;
+   clear: both;
+   color: #fff;
+   display: block;
+   margin: 50px 0 0 0;
+   bottom: 0;
+   text-align: center;
+   padding: 5px 0;
+   position: absolute;
+ }
+
+/*-------------------------------------------------*/
+
+
+/* FORM */
+
+.add-transaction__title {
+   margin: 10px 0 20px 10px;
+ }
+
+
+.form {
+  position: relative;}
+.form__col {
+   width: 100%;
+   float: left;
+   margin: 0 0 15px 0;
+   padding: 10px;
+}
+.form__label,
+.form__input {
+   width: 100%;
+ }
+.form__label {
+   color: coral;
+   display: block;
+   font-weight: bold;
+   font-size: 130%;
+   margin: 0 0 5px 0;
+ }
+.form__input {
+   background-color: whitesmoke;
+   border: 1px solid black;
+   box-shadow: 1px 1px 10px grey;
+   border-radius: 4px;
+   padding: 10px;
+ }
+.form__btn {
+   border: 2px solid ;
+   background-color: greenyellow;
+   box-shadow: 1px 1px 10px grey;
+   border-radius: 4px;
+   color: black;
+   cursor: pointer;
+   clear: both;
+   display: block;
+   font-weight: bold;
+   margin: 20px auto;
+   padding: 10px;
+   text-transform: uppercase;
+   width: 100%;
+   max-width: 96%;
+
+}
+.form__btn:hover {
+   border-color: gold;
+   background-color: #fff;
+   color: coral;
+   transition: 0.3s ease-in;
+ }
+.form__errors {
+   width: 100%;
+   position: absolute;
+   text-align: center;
+ }
+.form__error {
+   color: red;
+   font-size: 90%;
+   font-weight: bold;
+   text-align: center;
+   width: 100%;
+ }
+
+/*------------------------------------------------*/
+
+/* MAX TRANSACTION */
+
+.max-transaction,
+.total {
+  width: 100%;
+  text-align: center;
+
+}
+.max-transaction__title,
+.max-transaction__desc {
+  color: black;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+ }
+.max-transaction__value {
+  color: green;
+  font-weight: bold;
+  font-size: 110%;
+  margin: 0 0 0 10px;
+ }
+
+
+.max-transaction {
+  padding: 15px;
+}
+.max-transaction__name {
+  font-weight: bold;
+  font-size: 120%;
+  margin: 0;
+  text-transform: uppercase;
+ }
+
+.total {
+  padding: 40px 15px;
+}
+
+/*---------------------------------------*/
+
+/* TRANSACTION LIST */
+
+.transaction-list {
+  overflow: hidden;
+  padding: 10px 40px;
+}
+.transaction-list__list {
+   margin: 40px 0 0 0;
+   padding: 0;
+   width: 100%;
+}
+
+.item {
+  background-color: #fff;
+  border: 2px solid blue;
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 4px;
+  color: #121212;
+  display: block;
+  list-style: none;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+.item__name {
+   color: red;
+   display: block;
+   font-weight: bold;
+   font-size: 130%;
+   margin: 0 0 20px 0;
+   text-transform: uppercase;
+ }
+.item__amount {
+   display: block;
+ }
+.item__value {
+   font-weight: bold;
+   font-size: 120%;
+   margin: 0 0 0 5px;
+ }
+.item__remove {
+   width: 35px;
+   height: 35px;
+   background-color: red;
+   border-radius: 50%;
+   border: 2px solid antiquewhite;
+   box-shadow: 1px 1px 10px grey;
+   color: #fff;
+   cursor: pointer;
+   font-weight: bold;
+   font-size: 120%;
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   text-align: center;
+   transform: translate(0,-50%);
+}
+.item__remove :hover {
+   background-color: #fff;
+   border-color: black;
+   color: greenyellow;
+   transition: 0.3s ease-in;
+ }
+
+
+
